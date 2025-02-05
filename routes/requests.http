@@ -1,0 +1,51 @@
+###
+GET http://localhost:3000/api/report?id=12345&year=2024&month=2
+Accept: application/json
+
+###
+GET http://localhost:3000/api/report?id=123123&year=2025&month=2
+Content-Type: application/json
+
+###
+POST http://localhost:3000/api/add
+Content-Type: application/json
+
+{
+  "user_id": 123123,
+  "description": "milk",
+  "category": "food",
+  "sum": 8
+}
+
+###
+POST http://localhost:3000/api/add
+Content-Type: application/json
+
+{
+  "user_id": 123123,
+  "description": "rent",
+  "category": "housing",
+  "sum": 1500
+}
+
+###
+POST http://localhost:3000/api/add
+Content-Type: application/json
+
+{
+  "user_id": 123123,
+  "description": "bills",
+  "category": "housing",
+  "sum": 620
+}
+
+###
+POST http://localhost:3000/api/add
+Content-Type: application/json
+
+{
+  "user_id": 123123,
+  "description": "a lot of fun",
+  "category": "other",
+  "sum": 8
+}
