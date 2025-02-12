@@ -60,18 +60,6 @@ router.get('/report', async(req, res) => {
 			}
 		});
 
-		// costItems.forEach(item => {
-		// 	const categoryObject = newReport.costs.findIndex(c => Object.keys(c)[0] === item.category) //item.category);
-		// 	if (categoryObject !== -1) {
-		// 		newReport.costs[categoryObject].push({//[item.category].push({
-		// 			sum: costItems.sum,
-		// 			description: costItems.description,
-		// 			day: costItems.day
-		// 		});
-		// 	}
-		//});
-
-
 		try {
 			await newReport.save();
 			res.status(201).json(newReport);
